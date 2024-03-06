@@ -31,7 +31,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/work',
-        element:<Work></Work>
+        element:<Work></Work>,
+        loader: () => fetch('/project.json')
       },
       {
         path: '/contact',

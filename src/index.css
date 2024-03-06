@@ -6,15 +6,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.dividerr {
+  border-bottom: 2px solid var(--border);
+  margin: 3rem 0;
+}
 .btn {
   background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
+    #156874 21.43%,
+    #126675 50.63%,
+    #22769c 100%,
+    #1a7a86 117.04%
   );
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(45, 175, 164, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+  --border: rgba(63, 63, 70, 0.4)
+}
+
+.containerrr {
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
 .btn:hover {
@@ -22,8 +45,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #36aaee 100%,
+    #56b3ff 117.04%
   );
 }
 
@@ -48,13 +71,13 @@
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
-  .h2 {
+  /* .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
-  }
-  .btn {
+  } */
+  /* .btn {
     @apply rounded-full font-primary text-white font-medium;
   }
   .btn-sm {
@@ -65,11 +88,20 @@
   }
   .btn-link {
     @apply text-base;
-  }
+  } */
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+  button {
+    all:unset
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  button:active {
+    scale: 0.9;
   }
 }

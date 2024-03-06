@@ -1,0 +1,77 @@
+.main{
+    gap: 2.6rem;
+    align-items: start;
+}
+
+.cardproject {
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+}
+.cardproject img {
+    border-radius: 5px;
+}
+.cardproject:hover {
+    border: 2px solid rgba(173, 217, 247, 0.3);
+    background:rgba(155, 173, 185, 0.3);
+    transition: 0.40s;
+    rotate: 1deg;
+    scale: 1.01;
+}
+
+.left-section.flex {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-section.flex button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.left-section.flex button:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.left-section.flex button.activeee {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    border: 1px solid royalblue;
+}
+
+.main .right-section.flex {
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2rem;
+    justify-content: center;
+}   
+
+@media (max-width:600px){
+    .main{
+        flex-direction: column;
+        gap: 2.6rem;
+        align-items: center;
+    }
+
+    .left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .left-section.flex button {
+        
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+
+    }
+}
